@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".emergency.emergencyActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:background="@color/red"
+        android:text="Medical Ambulance"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/emergencyServiceImage"
+        android:layout_width="215dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="97dp"
+        android:background="@drawable/image_am" />
+
+    <TextView
+        android:id="@+id/callStatusLabel"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:gravity="center"
+        android:text="Ringing..."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginStart="6pt"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/emergencyService_hangupBtn"
+        android:layout_width="100dp"
+        android:layout_height="105dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="158dp"
+        android:layout_marginStart="69pt"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/hangup_icon"
+        android:contentDescription="@string/hang_up">
+
+    </ImageButton>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationViewTranslate"
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:background="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivMicButton"
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/mic_transparent" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</LinearLayout>
